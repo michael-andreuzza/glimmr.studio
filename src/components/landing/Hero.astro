@@ -94,48 +94,39 @@ const themes = [
 <section class="relative overflow-hidden">
   <div class="max-w-sm mx-auto w-full shrink-0 py-6 relative">
     <div>
-      <h1 class="font-medium mt-4 text-black">Glimmr Studio</h1>
+      <svg class="size-8" viewBox="0 0 201 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_1_1078)">
+        <path d="M170.5 129.496C170.5 168.434 139.16 200 100.5 200C61.8401 200 30.5 168.434 30.5 129.496C30.5 92.6391 66.3392 48.2064 95.6126 6.95421C98.0122 3.57266 103.038 3.53875 105.474 6.89421C135.851 48.7369 170.5 92.5911 170.5 129.496Z" fill="currentColor"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_1_1078">
+        <rect width="200" height="200" fill="white" transform="translate(0.5)"/>
+        </clipPath>
+        </defs>
+        </svg>
+        
+      <h1 class="font-medium mt-8 text-black">Glimmr</h1>
       <p class="text-base-500">
-        Small pages that shine. Designed to convert.
+        Landing pages that shine. Designed to convert.
         <br /> Soon, also Framer development.
       </p>
 
-      <h2 class="font-medium mt-12 tex-black">Pricing</h2>
       <!-- Tabs -->
-      <div class="mt-2">
+      <div class="mt-12">
         <div class="flex space-x-2 items-center border-b border-neutral-200" id="tabs">
           <button
-            class="tab-btn text-neutral-500  w-auto py-1 pr-4  border-b-2 border-transparent"
-            data-tab="tab1">Hero section</button
+            class="tab-btn text-neutral-500 py-1  border-b-2 pr-4  w-auto border-transparent "
+            data-tab="tab1">Landing page</button
           >
           <button
-            class="tab-btn text-neutral-500 py-1  border-b-2 pr-4  w-auto border-transparent "
-            data-tab="tab2">Landing page</button
+            class="tab-btn text-neutral-500  w-auto py-1 pr-4  border-b-2 border-transparent"
+            data-tab="tab2">Hero section</button
           >
         </div>
         <!-- Tab Panels -->
         <div id="tab-panels" class="mt-4">
-          <div class="tab-panel" id="tab1">
-            <h2 class="font-medium text-black">Hero Section Revamp</h2>
-            <p class="text-neutral-500 mt-2">
-              A clean redesign of your hero section to help it connect better,
-              look sharper, and convert more effectively.
-            </p>
-            <p class="font-medium text-black mt-4">Price</p>
-            <p class="text-neutral-500 mt-2">$200</p>
-            <p class="font-medium text-black mt-4">What I’ll need from you</p>
-            <ul class="list-disc pl-5 text-neutral-500 space-y-2 mb-4">
-              <li>A link or screenshot of your current hero section</li>
-              <li>A short brief on what you're aiming for</li>
-            </ul>
-            <p class="font-medium text-black">What you’ll get</p>
-            <ul class="list-disc pl-5 text-neutral-500 space-y-2">
-              <li>Figma file of your revamped hero section</li>
-              <li>Responsive design: desktop, tablet, and mobile versions</li>
-            </ul>
-            
-          </div>
-          <div class="tab-panel hidden" id="tab2">
+         
+          <div class="tab-panel " id="tab1">
             <h2 class="font-medium text-black">Landing Page Revamp</h2>
             <p class="text-neutral-500 mt-2">
               A refreshed landing page design that’s clean, on-brand, and built
@@ -153,6 +144,26 @@ const themes = [
             <ul class="list-disc pl-5 text-neutral-500 space-y-2">
               <li>Figma file with a fully revamped landing page design</li>
               <li>Responsive layouts for desktop, tablet, and mobile</li>
+            </ul>
+            
+          </div>
+          <div class="tab-panel hidden" id="tab2">
+            <h2 class="font-medium text-black">Hero Section Revamp</h2>
+            <p class="text-neutral-500 mt-2">
+              A clean redesign of your hero section to help it connect better,
+              look sharper, and convert more effectively.
+            </p>
+            <p class="font-medium text-black mt-4">Price</p>
+            <p class="text-neutral-500 mt-2">$200</p>
+            <p class="font-medium text-black mt-4">What I’ll need from you</p>
+            <ul class="list-disc pl-5 text-neutral-500 space-y-2 mb-4">
+              <li>A link or screenshot of your current hero section</li>
+              <li>A short brief on what you're aiming for</li>
+            </ul>
+            <p class="font-medium text-black">What you’ll get</p>
+            <ul class="list-disc pl-5 text-neutral-500 space-y-2">
+              <li>Figma file of your revamped hero section</li>
+              <li>Responsive design: desktop, tablet, and mobile versions</li>
             </ul>
             
           </div>
