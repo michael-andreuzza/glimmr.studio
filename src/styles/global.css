@@ -2,10 +2,49 @@
 @plugin "@tailwindcss/forms";
 @plugin "@tailwindcss/typography";
 @plugin "tailwind-scrollbar-hide";
+@layer utilities {
+  .shadow-sides {
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
+      rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+      rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
+      rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
+      rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
+      rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+  }
+}
+
+@theme {
+  /* Typography*/
+  --font-sans: "Inter", sans-serif;
+  --font-display: "InterDisplay", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  /* accent */
+  --color-accent-50: oklch(92.98% 0.035 285.7);
+  --color-accent-100: oklch(86.22% 0.07 284.83);
+  --color-accent-200: oklch(72.58% 0.146 282.13);
+  --color-accent-300: oklch(59.81% 0.221 277.36);
+  --color-accent-400: oklch(49.73% 0.283 269.85);
+  --color-accent-500: oklch(45.2% 0.313 264.05);
+  --color-accent-600: oklch(38.21% 0.265 264.05);
+  --color-accent-700: oklch(30.87% 0.214 264.05);
+  --color-accent-800: oklch(23.07% 0.16 264.05);
+  --color-accent-900: oklch(14.51% 0.101 264.05);
+  --color-accent-950: oklch(9.65% 0.067 264.05);
+  --color-base-50: oklch(0.985 0 0);
+  --color-base-100: oklch(0.97 0 0);
+  --color-base-200: oklch(0.922 0 0);
+  --color-base-300: oklch(0.87 0 0);
+  --color-base-400: oklch(0.708 0 0);
+  --color-base-500: oklch(0.556 0 0);
+  --color-base-600: oklch(0.439 0 0);
+  --color-base-700: oklch(0.371 0 0);
+  --color-base-800: oklch(0.269 0 0);
+  --color-base-900: oklch(0.205 0 0);
+  --color-base-950: oklch(0.145 0 0);
+}
 
 :root {
   font-family: Inter, sans-serif;
-
 }
 @supports (font-variation-settings: normal) {
   /* Use variable font if supported */
