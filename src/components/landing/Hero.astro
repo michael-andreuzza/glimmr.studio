@@ -79,135 +79,196 @@ const themes = [
 ];
 ---
 
-<section class="overflow-x-hidden">
-  <div id="keen-slider" class="keen-slider relative">
-    {
-      themes.map(({ name, image }) => (
-        <div class="relative w-full keen-slider__slide py-6 drop-shadow-xl">
-          <Image src={image} width={800} height={800} alt={name} />
-        </div>
-      ))
-    }
-  </div>
-</section>
-
-<section class="relative overflow-hidden">
-  <div class="max-w-sm mx-auto w-full shrink-0 py-6 relative">
-    <div>
-      <svg class="size-8" viewBox="0 0 201 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g clip-path="url(#clip0_1_1078)">
-        <path d="M170.5 129.496C170.5 168.434 139.16 200 100.5 200C61.8401 200 30.5 168.434 30.5 129.496C30.5 92.6391 66.3392 48.2064 95.6126 6.95421C98.0122 3.57266 103.038 3.53875 105.474 6.89421C135.851 48.7369 170.5 92.5911 170.5 129.496Z" fill="currentColor"/>
-        </g>
-        <defs>
-        <clipPath id="clip0_1_1078">
-        <rect width="200" height="200" fill="white" transform="translate(0.5)"/>
-        </clipPath>
-        </defs>
-        </svg>
-        
-      <h1 class="font-medium mt-8 text-black">Glimmr</h1>
-      <p class="text-base-500">
-        Landing pages that shine. Designed to convert.
-        <br /> Soon, also Framer development.
-      </p>
-
-      <!-- Tabs -->
-      <div class="mt-12">
-        <div class="flex space-x-2 items-center border-b border-neutral-200" id="tabs">
-          <button
-            class="tab-btn text-neutral-500 py-1  border-b-2 pr-4  w-auto border-transparent "
-            data-tab="tab1">Landing page</button
+<div class="fixed bottom-10 right-10 z-10 flex">
+  <a
+    href="https://cal.com/michael-andreuzza/30min"
+    class="flex relative text-center font-medium items-center shadow-button justify-center overflow-hidden border border-transparent duration-300 ease-in-out transition-all outline-offset-4 hover:opacity-90 hover:shadow-none focus-visible:outline-none focus:outline-2 inset-shadow-xs inset-shadow-white/10 ring active:inset-shadow-transparent text-white bg-linear-to-r/oklch from-base-900 to-base-950 hover:bg-base-400 focus:outline-base-900 ring-base-900 h-10 px-6 py-2 text-sm rounded-full"
+  >
+    Reserva una llamada
+  </a>
+</div>
+<section class="relative pb-24 pt-8 lg:py-8  px-8">
+  <div class="grid grod-cols-1 lg:grid-cols-2 gap-y-12">
+    <div class="w-full shrink-0 relative">
+      <div class="relative max-w-sm">
+        <div>
+          <svg
+            width="125"
+            height="126"
+            viewBox="0 0 125 126"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-          <button
-            class="tab-btn text-neutral-500  w-auto py-1 pr-4  border-b-2 border-transparent"
-            data-tab="tab2">Hero section</button
-          >
+            <path
+              d="M1 124.24V1.2403H124V124.24H1Z"
+              stroke="white"
+              stroke-width="2"
+              stroke-miterlimit="10"></path>
+            <path
+              d="M62.5001 0.240295V125.136"
+              stroke="white"
+              stroke-width="2"
+              stroke-miterlimit="10"></path>
+            <path
+              d="M124.896 62.7403H62.5001"
+              stroke="white"
+              stroke-width="2"
+              stroke-miterlimit="10"></path>
+            <path
+              d="M93.6981 0.240295V62.7403"
+              stroke="white"
+              stroke-width="2"
+              stroke-miterlimit="10"></path>
+            <path
+              d="M124.896 31.4383H93.6981"
+              stroke="white"
+              stroke-width="2"
+              stroke-miterlimit="10"></path>
+            <path
+              d="M109.297 0.240295V31.4383"
+              stroke="white"
+              stroke-width="2"
+              stroke-miterlimit="10"></path>
+            <path
+              d="M124.896 15.8393H109.297"
+              stroke="white"
+              stroke-width="2"
+              stroke-miterlimit="10"></path>
+            <path
+              d="M117.097 0.240295V15.8393"
+              stroke="white"
+              stroke-width="2"
+              stroke-miterlimit="10"></path>
+            <path
+              d="M124.896 8.03979H117.097"
+              stroke="white"
+              stroke-width="2"
+              stroke-miterlimit="10"></path>
+          </svg>
+
+          <h1 class="font-medium mt-8 text-white">Glimmr</h1>
+          <p class="text-base-500">
+            Landing pages que brillan. Diseñadas para convertir.
+            <br /> Pronto, también desarrollo en Framer.
+          </p>
         </div>
-        <!-- Tab Panels -->
-        <div id="tab-panels" class="mt-4">
-         
-          <div class="tab-panel " id="tab1">
-            <h2 class="font-medium text-black">Landing Page Revamp</h2>
-            <p class="text-neutral-500 mt-2">
-              A refreshed landing page design that’s clean, on-brand, and built
-              to guide users toward action — whether it’s signups, sales, or
-              scroll depth.
+
+        <div class="mt-8">
+          <h2 class="font-medium text-white">Rediseño de Landing Page</h2>
+          <p class="text-base-500 mt-2">
+            Un diseño renovado de tu página de inicio: limpio, alineado con tu
+            marca y creado para guiar al usuario hacia la acción — ya sea
+            registros, ventas o scroll.
+          </p>
+          <p class="indet-8 italic text-base-400 mt-2">
+            Si necesitas algo pequeño, simple, pulido y bien construido — estás
+            en el lugar correcto. Vamos a hacer que tu diseño refleje lo
+            increíble que es tu producto.
+          </p>
+          <p class="font-medium text-white mt-4">Precio</p>
+          <p class="text-base-500 mt-2">$2,000</p>
+
+          <h3 class="font-medium text-white mt-12">Qué necesito de ti</h3>
+          <ul class="list-disc pl-5 text-base-500 space-y-2 mt-4">
+            <li>Enlace actual o diseño de tu página de inicio</li>
+            <li>
+              Un resumen de tus objetivos, tu marca y qué no está funcionando
+            </li>
+          </ul>
+
+          <h3 class="font-medium text-white mt-8">Qué obtendrás</h3>
+          <ul class="list-disc pl-5 text-base-500 space-y-2">
+            <li>Archivo Figma con el rediseño completo de tu landing page</li>
+            <li>Diseño responsive para escritorio, tablet y móvil</li>
+          </ul>
+
+          <h3 class="font-medium text-white mt-8">Cómo funciona</h3>
+          <p class="text-base-500 mt-2">
+            1 — En Glimmr hemos eliminado los meetings y las reuniones. Vamos
+            directos al grano con tu diseño y tus objetivos.
+          </p>
+          <p class="text-base-500 mt-2">
+            2 — Tras la primera llamada, me pongo a trabajar y te mantendré al
+            tanto del estado del proyecto por Orchestra.
+          </p>
+          <p class="text-base-500 mt-2">
+            3 — Normalmente, un proyecto puede tardar desde dos semanas hasta un
+            mes, dependiendo de su complejidad.
+          </p>
+
+          <div class="mt-12">
+            <h3 class="text-white font-medium">Conóceme</h3>
+            <p class="text-base-500">
+              Llevo 5 años diseñando y creando mis propios productos con éxito,
+              con más de 10,000 clientes satisfechos.
             </p>
-            <p class="font-medium text-black mt-4">Price</p>
-            <p class="text-neutral-500 mt-2">$2,000</p>
-            <p class="font-medium text-black">What I’ll need from you</p>
-            <ul class="list-disc pl-5 text-neutral-500 space-y-2 mt-4">
-              <li>Current link or layout of your landing page</li>
-              <li>A brief on your goals, brand, and what’s not working</li>
+
+            <h3 class="text-white mt-4">Mis últimos proyectos son:</h3>
+            <ul class="list-disc pl-5 text-base-500 space-y-2 mt-2">
+              <li>
+                <a
+                  class="text-white hover:text-white/50"
+                  href="https://www.lexingtonthemes.com">Lexington Themes</a
+                >
+                — Diseño y desarrollo con Astro y Tailwind CSS, además de la creación
+                de todos los themes disponibles en la página web.
+              </li>
+              <li>
+                <a
+                  class="text-white hover:text-white/50"
+                  href="https://www.oxbowui.com">Oxbow UI</a
+                >
+                — Diseño y desarrollo con Astro y Tailwind CSS, y creación de los
+                componentes de Tailwind CSS.
+              </li>
+              <li>
+                Quieres conocer mas sobre todos mis projectos? Visita
+                <a
+                  class="text-white hover:text-white/50"
+                  href="https://www.michaelandreuzza.com">mi página personal</a
+                >
+              </li>
             </ul>
-            <p class="font-medium text-black mt-4">What you’ll get</p>
-            <ul class="list-disc pl-5 text-neutral-500 space-y-2">
-              <li>Figma file with a fully revamped landing page design</li>
-              <li>Responsive layouts for desktop, tablet, and mobile</li>
-            </ul>
-            
-          </div>
-          <div class="tab-panel hidden" id="tab2">
-            <h2 class="font-medium text-black">Hero Section Revamp</h2>
-            <p class="text-neutral-500 mt-2">
-              A clean redesign of your hero section to help it connect better,
-              look sharper, and convert more effectively.
-            </p>
-            <p class="font-medium text-black mt-4">Price</p>
-            <p class="text-neutral-500 mt-2">$200</p>
-            <p class="font-medium text-black mt-4">What I’ll need from you</p>
-            <ul class="list-disc pl-5 text-neutral-500 space-y-2 mb-4">
-              <li>A link or screenshot of your current hero section</li>
-              <li>A short brief on what you're aiming for</li>
-            </ul>
-            <p class="font-medium text-black">What you’ll get</p>
-            <ul class="list-disc pl-5 text-neutral-500 space-y-2">
-              <li>Figma file of your revamped hero section</li>
-              <li>Responsive design: desktop, tablet, and mobile versions</li>
-            </ul>
-            
           </div>
         </div>
       </div>
-      <div class="flex mt-6 pt-6 border-t border-neutral-200">
-        <a
-          href="https://cal.com/michael-andreuzza/30min"
-          class="flex relative text-center font-medium items-center shadow-button justify-center overflow-hidden border border-transparent duration-300 ease-in-out transition-all outline-offset-4 hover:opacity-90 hover:shadow-none focus-visible:outline-none focus:outline-2 inset-shadow-xs inset-shadow-white/10 ring active:inset-shadow-transparent text-white bg-linear-to-r/oklch from-base-900 to-base-950 hover:bg-base-400 focus:outline-base-900 ring-base-900 h-8 px-6 py-2 text-xs rounded-full"
-        >
-         Book a call
-        </a>
-      </div>
-      <p
-        class="indent-8 text-neutral-500 mt-12"
-      >
-        If you need something small, sharp, and well built — you're in the right
-        place. Let’s make your design actually match how good your product is.
-      </p>
     </div>
+
+    <section class="overflow-x-hidden order-first md:order-last lg:-mt-4">
+      <div id="keen-slider" class="keen-slider relative">
+        {
+          themes.map(({ name, image }) => (
+            <div class="relative w-full keen-slider__slide  ">
+              <Image src={image} width={800} height={800} alt={name} />
+            </div>
+          ))
+        }
+      </div>
+    </section>
   </div>
-</section>
-<script>
-  const tabButtons = document.querySelectorAll(".tab-btn");
-  const tabPanels = document.querySelectorAll(".tab-panel");
+  <script>
+    const tabButtons = document.querySelectorAll(".tab-btn");
+    const tabPanels = document.querySelectorAll(".tab-panel");
 
-  tabButtons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const targetTab = btn.getAttribute("data-tab");
+    tabButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const targetTab = btn.getAttribute("data-tab");
 
-      tabButtons.forEach((b) => {
-        b.classList.remove("text-black", "border-b-black");
-        b.classList.add("text-neutral-500", "border-transparent");
-      });
+        tabButtons.forEach((b) => {
+          b.classList.remove("text-white", "border-b-white");
+          b.classList.add("text-base-500", "border-transparent");
+        });
 
-      btn.classList.remove("text-neutral-500", "border-transparent");
-      btn.classList.add("text-black", "border-b-black");
+        btn.classList.remove("text-base-500", "border-transparent");
+        btn.classList.add("text-white", "border-b-white");
 
-      tabPanels.forEach((panel) => {
-        panel.classList.toggle("hidden", panel.id !== targetTab);
+        tabPanels.forEach((panel) => {
+          panel.classList.toggle("hidden", panel.id !== targetTab);
+        });
       });
     });
-  });
-</script>
+  </script>
+</section>
 <script type="module">
   import KeenSlider from "https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm";
   window.addEventListener("DOMContentLoaded", () => {
@@ -265,8 +326,8 @@ const themes = [
           "(min-width: 1024px)": {
             slides: {
               origin: "auto",
-              perView: 3.5,
-              spacing: 24,
+              perView: 1.2,
+              spacing: 0,
             },
           },
         },
