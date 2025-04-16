@@ -1,6 +1,5 @@
 ---
 import { Image } from "astro:assets";
-
 import Trendspotter from "@/images/trendspotter.png";
 import Navy from "@/images/navy.png";
 import Spaziobianco from "@/images/spaziobianco.png";
@@ -78,7 +77,6 @@ const themes = [
   { name: "Navy", image: Navy },
 ];
 ---
-
 <div class="fixed bottom-10 right-10 z-10 flex">
   <a
     href="https://cal.com/michael-andreuzza/30min"
@@ -89,7 +87,7 @@ const themes = [
 </div>
 <section class="relative pb-24 pt-8 lg:py-8 px-8">
   <div
-    class="grid grod-cols-1 lg:grid-cols-2 gap-y-12"
+    class="grid grid-cols-1 lg:grid-cols-2 gap-y-12"
   >
     <div class="w-full shrink-0 relative">
       <div class="relative max-w-sm">
@@ -101,16 +99,58 @@ const themes = [
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <!-- SVG paths unchanged -->
+            <path
+              d="M1 124.24V1.2403H124V124.24H1Z"
+              stroke="white"
+              stroke-width="2"
+              stroke-miterlimit="10"></path>
+            <path
+              d="M62.5001 0.240295V125.136"
+              stroke="white"
+              stroke-width="2"
+              stroke-miterlimit="10"></path>
+            <path
+              d="M124.896 62.7403H62.5001"
+              stroke="white"
+              stroke-width="2"
+              stroke-miterlimit="10"></path>
+            <path
+              d="M93.6981 0.240295V62.7403"
+              stroke="white"
+              stroke-width="2"
+              stroke-miterlimit="10"></path>
+            <path
+              d="M124.896 31.4383H93.6981"
+              stroke="white"
+              stroke-width="2"
+              stroke-miterlimit="10"></path>
+            <path
+              d="M109.297 0.240295V31.4383"
+              stroke="white"
+              stroke-width="2"
+              stroke-miterlimit="10"></path>
+            <path
+              d="M124.896 15.8393H109.297"
+              stroke="white"
+              stroke-width="2"
+              stroke-miterlimit="10"></path>
+            <path
+              d="M117.097 0.240295V15.8393"
+              stroke="white"
+              stroke-width="2"
+              stroke-miterlimit="10"></path>
+            <path
+              d="M124.896 8.03979H117.097"
+              stroke="white"
+              stroke-width="2"
+              stroke-miterlimit="10"></path>
           </svg>
-        
           <h1 class="font-medium mt-8 text-white">Welcome to Glimmr</h1>
           <p class="text-base-500">
             Clean, effective landing page design — crafted to convert.
             <br /> No code. Just beautiful design.
           </p>
         </div>
-        
         <div class="mt-8">
           <h2 class="font-medium text-white">Landing Page Design</h2>
           <p class="text-base-500 mt-2">
@@ -119,10 +159,8 @@ const themes = [
           <p class="indent-8 italic text-base-400 mt-2">
             If you're looking for something minimal, thoughtful, and aligned with your product — you're in the right place.
           </p>
-        
           <p class="font-medium text-white mt-4">Price</p>
           <p class="text-base-500 mt-2">$2,000</p>
-        
           <h3 class="font-medium text-white mt-8">How it works</h3>
           <p class="text-base-500 mt-2">
             1 — Book a call. We’ll talk through what you need and if we’re a good fit, I’ll send you a payment link.
@@ -133,13 +171,11 @@ const themes = [
           <p class="text-base-500 mt-2">
             3 — Most projects take between 2–4 weeks, depending on the scope.
           </p>
-        
           <div class="mt-12">
             <h3 class="text-white font-medium">About Me</h3>
             <p class="text-base-500">
               I’ve been designing products for 5+ years — with over 10,000 happy customers across multiple projects.
             </p>
-        
             <h3 class="text-white mt-4">Recent Work</h3>
             <ul class="list-disc pl-5 text-base-500 space-y-2 mt-2">
               <li>
@@ -160,10 +196,8 @@ const themes = [
               </li>
             </ul>
           </div>
-        
       </div>
     </div>
-
     <section class="overflow-x-hidden order-first md:order-last lg:-mt-4">
       <div id="keen-slider" class="keen-slider relative">
         {
@@ -179,19 +213,15 @@ const themes = [
   <script>
     const tabButtons = document.querySelectorAll(".tab-btn");
     const tabPanels = document.querySelectorAll(".tab-panel");
-
     tabButtons.forEach((btn) => {
       btn.addEventListener("click", () => {
         const targetTab = btn.getAttribute("data-tab");
-
         tabButtons.forEach((b) => {
           b.classList.remove("text-white", "border-b-white");
           b.classList.add("text-base-500", "border-transparent");
         });
-
         btn.classList.remove("text-base-500", "border-transparent");
         btn.classList.add("text-white", "border-b-white");
-
         tabPanels.forEach((panel) => {
           panel.classList.toggle("hidden", panel.id !== targetTab);
         });
